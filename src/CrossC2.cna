@@ -500,7 +500,8 @@ sub createCrossC2Script {
     drow_text($dialog, "lhost", "Local Host:", 20);
     drow_text($dialog, "lport", "Web Delivery Port: ", 20);
     drow_combobox($dialog, "type", "Type: ", @("curl", "wget", "python", "php"));
-    drow_combobox($dialog, "listener", "CrossC2 Listener: ", @beaconListenerMenu);
+    #drow_combobox($dialog, "listener", "CrossC2 Listener: ", @beaconListenerMenu);
+    drow_combobox($dialog, "listener", "CrossC2 Listener: ", 20);
     drow_checkbox($dialog, "enableSSL", "SSL: ", "Enable SSL");
     drow_checkbox($dialog, "autoDelete", "autoDelete: ", "auto delete");
     dbutton_action($dialog, "Build");
